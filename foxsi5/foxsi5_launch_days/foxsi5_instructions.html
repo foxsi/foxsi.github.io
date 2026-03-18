@@ -42,6 +42,21 @@
 
 				<!-- Main -->
 					<div id="main">
+						<section>
+							<h2>FOXSI-5 Launch Updates</h2>
+							<ul class="actions">
+								<!-- ADD MORE DAYS HERE WITH COPIES OF "foxsi5_launch_days/foxsi5_20260501.html"-->
+								<!-- REMEMBER TO UPDATE THIS LIST ON EACH PAGE. NEWEST AT THE TOP? -->
+								<li><a href="foxsi5_20260502.html" class="button">2026/05/02</a></li>
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/01</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="foxsi5_today.html" class="primary button small" id="curr_date">Today</a></li>
+								<li><a href="foxsi5_instructions.html" class="primary button small">Adding New Update Pages</a></li>
+							</ul>
+						</section>
+
+						
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
@@ -51,20 +66,20 @@
 								<p>This page will detail how and where to access the HTML code to add a new FOXSI-5 launch plan update page.</p>
 								<p>
 									<em>
-										This page also provides material to help with the Git/Github best practices or workflow when contributing to the website code at <a href="#github_help">below</a>.
+										Material is provided to help with Git/Github best practices or workflow when contributing to the website code <a href="#github_help">below</a>.
 									</em>
 								</p>
 							</section>
 							<section>
 								<h3>Step 1: Create the new HTML update page</h3>
-								<p>Let's start in the <a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/ folder in the top level of the repository <a style="color:rgb(234, 51, 35);">(a)</a>.</p>
+								<p>Let's start in the <a style="color:rgb(101, 165, 66);">/foxsi5/foxsi5_launch_days</a>/ folder in the top level of the repository <a style="color:rgb(234, 51, 35);">(a)</a>.</p>
 								<p>Let's use the temporary update page dated 2026 May 1st as a template and use it to create an <a style="color:rgb(202, 116, 189);">update for the following day</a>, May 2nd <a style="color:rgb(234, 51, 35);">(b)</a>.</p>
-								<div class="image main"><img src="foxsi5_updates/update_guide/step1_foxsi5_inst.png" alt="" /></div>
+								<div class="image main"><img src="/foxsi5/foxsi5_launch_days/foxsi5_updates/update_guide/step1_foxsi5_inst.png" alt="" /></div>
 								<p>We now have a new HTML file to edit and add in the information we want to share with the world regarding FOXSI-5 launch-day plans.</p>
 							</section>
 							<section>
 								<h3>Step 2: Update the page with information</h3>
-								<p>From the template here, the main coordination sections with informatino are:</p>
+								<p>From the template here, the main coordination sections with information are:</p>
 									<ul class="alt">
 										<li>The Today's Planned Potential Targets section, the table of possible targets for the day in question.</li>
 										<li>The Auxiliary Information section, the sections that will have more details about the plan for that day and might have linked files and images.</li>
@@ -77,18 +92,23 @@
 											<p>Since we're using the <a style="color:rgb(195, 166, 55);">foxsi5_20260501.html</a> file as a template, we'll want to update the references to May 1st, 2026 and the reference to the time this page was last updated.</li>
 										</dd>
 								</dl>
-								<div class="image main"><img src="foxsi5_updates/update_guide/step2_foxsi5_inst.png" alt="" /></div>
+								<div class="image main"><img src="/foxsi5/foxsi5_launch_days/foxsi5_updates/update_guide/step2_foxsi5_inst.png" alt="" /></div>
 								<dl>
 									<dt>Adding images and files.</dt>
 										<dd>
 											<p>Any images or material can be placed in and linked to the following folder.</p>
 											<ul class="alt">
-												<li><a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/<a style="color:rgb(126, 147, 168);">foxsi5_updates</a>/</li>
+												<li><a style="color:rgb(101, 165, 66);">/foxsi5/foxsi5_launch_days</a>/<a style="color:rgb(126, 147, 168);">foxsi5_updates</a>/</li>
 											</ul>
+											<p>If the material is for a specific day's file, create a new folder here and use that. This new folder will be referred to as <code>&lt;day_folder&gt;</code> here.</p>
 											<p>Images can be linked and displayed directly in the browser and files can be linked for browser viewing or download. Examples of these are:</p>
 											<ul class="alt">
-												<li>Image: <code>&lt;img src="foxsi5_updates/image_name.png" alt="" /&gt;</code></li>
-												<li>Document: <code>&lt;a class="button" href="foxsi5_updates/file_name.png" target="_blank"&gt;Text&lt;/a&gt;</code></li>
+												<li>Image: <code>&lt;img src="/foxsi5/foxsi5_launch_days/foxsi5_updates/&lt;day_folder&gt;/image_name.png" alt="" /&gt;</code></li>
+												<li>Document: <code>&lt;a class="button" href="/foxsi5/foxsi5_launch_days/foxsi5_updates/&lt;day_folder&gt;/file_name.png" target="_blank"&gt;Text&lt;/a&gt;</code></li>
+											</ul>
+											<p>Assests can also be brought in frmo other websites. E.g., NASA's latest SDO/AIA image for the 211 &#8491; channel:</p>
+											<ul class="alt">
+												<li>Image: <code>&lt;img src="https://umbra.nascom.nasa.gov/images/latest_aia_211.gif" alt="" /&gt;</code></li>
 											</ul>
 										</dd>
 								</dl>
@@ -96,7 +116,7 @@
 							<section>
 								<h3>Step 3: Update the linked buttons on all pages</h3>
 								<p>Now we have a new page, it's time to make sure it's linked to the rest of the website.</p>
-								<p>To do this, we just add a new button to the top of all the relevant HTML pages for FOXSI-5. The files are all those in the <a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/ folder (except this instructions page) and the foxsi5_main.html page</p>
+								<p>To do this, we just add a new button to the top of all the relevant HTML pages for FOXSI-5. The files are all the HTML files in the <a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/ folder and the foxsi5/index.html page</p>
 								<p>The code that needs updated shows up in multple places (annoyingly); however, it can mostly be copied & pasted.</p>
 								<div class="image main"><img src="foxsi5_updates/update_guide/step3_foxsi5_inst.png" alt="" /></div>
 								<p></em></p>
@@ -104,7 +124,6 @@
 									<dt><em>Note</em></dt>
 										<dd>
 											<ul class="alt">
-												<li><em>The <code>../</code> for the paths in the <a style="color:rgb(159, 206, 98);">foxsi5_main.html</a> file.</em></li>
 												<li><em>The latest update page goes to the top of the "FOXSI-5 Launch Updates" list.</em></li>
 											</ul>
 										</dd>
@@ -162,6 +181,7 @@
 			</div>
 
 		<!-- Scripts -->
+		 	<script src="/assets/js/current_date.js"></script>
 			<script src="/assets/js/jquery.min.js"></script>
 			<script src="/assets/js/jquery.scrollex.min.js"></script>
 			<script src="/assets/js/jquery.scrolly.min.js"></script>

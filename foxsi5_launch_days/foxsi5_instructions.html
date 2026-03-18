@@ -49,18 +49,17 @@
 									<h1>Adding New Update Pages</h1>
 								</header>
 								<p>This page will detail how and where to access the HTML code to add a new FOXSI-5 launch plan update page.</p>
-								<dl>
-									<dt>This page will <em>not</em> describe the Git/Github best practices or workflow in detail.</dt>
-										<dd>
-											<p>We assume the contributer already knows to fork the main Github repository, make changes to a <em>new</em> branch of their fork, then finally propose the changes in a Pull Request from your <em>new</em> (not <em>main</em>) to the FOXSI main branch for review.</p>
-										</dd>
-								</dl>
+								<p>
+									<em>
+										This page also provides material to help with the Git/Github best practices or workflow when contributing to the website code at <a href="#github_help">below</a>.
+									</em>
+								</p>
 							</section>
 							<section>
 								<h3>Step 1: Create the new HTML update page</h3>
 								<p>Let's start in the <a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/ folder in the top level of the repository <a style="color:rgb(234, 51, 35);">(a)</a>.</p>
 								<p>Let's use the temporary update page dated 2026 May 1st as a template and use it to create an <a style="color:rgb(202, 116, 189);">update for the following day</a>, May 2nd <a style="color:rgb(234, 51, 35);">(b)</a>.</p>
-								<div class="image main"><img src="foxsi5_updates/step1_foxsi5_inst.png" alt="" /></div>
+								<div class="image main"><img src="foxsi5_updates/update_guide/step1_foxsi5_inst.png" alt="" /></div>
 								<p>We now have a new HTML file to edit and add in the information we want to share with the world regarding FOXSI-5 launch-day plans.</p>
 							</section>
 							<section>
@@ -78,7 +77,7 @@
 											<p>Since we're using the <a style="color:rgb(195, 166, 55);">foxsi5_20260501.html</a> file as a template, we'll want to update the references to May 1st, 2026 and the reference to the time this page was last updated.</li>
 										</dd>
 								</dl>
-								<div class="image main"><img src="foxsi5_updates/step2_foxsi5_inst.png" alt="" /></div>
+								<div class="image main"><img src="foxsi5_updates/update_guide/step2_foxsi5_inst.png" alt="" /></div>
 								<dl>
 									<dt>Adding images and files.</dt>
 										<dd>
@@ -99,7 +98,7 @@
 								<p>Now we have a new page, it's time to make sure it's linked to the rest of the website.</p>
 								<p>To do this, we just add a new button to the top of all the relevant HTML pages for FOXSI-5. The files are all those in the <a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/ folder (except this instructions page) and the foxsi5_main.html page</p>
 								<p>The code that needs updated shows up in multple places (annoyingly); however, it can mostly be copied & pasted.</p>
-								<div class="image main"><img src="foxsi5_updates/step3_foxsi5_inst.png" alt="" /></div>
+								<div class="image main"><img src="foxsi5_updates/update_guide/step3_foxsi5_inst.png" alt="" /></div>
 								<p></em></p>
 								<dl>
 									<dt><em>Note</em></dt>
@@ -110,6 +109,25 @@
 											</ul>
 										</dd>
 								</dl>
+							</section>
+							
+							<section>
+								<h3><div id="github_help">Github contribution help</div></h3>
+								<dl>
+									<dt>TLDR</dt>
+									<dd>
+										<p>The contributer should fork the main Github repository, make changes to a <em>new</em> branch of their fork, then finally propose the changes in a Pull Request from your <em>new</em> (not <em>main</em>) to the FOXSI main branch for review.</p>
+									</dd>
+								</dl>
+								<p>For more detail on contribution and workflow, the following document should help. The General FOXSI Git & Github Guide linked below should exlpain all the steps required when using Git/Github.</p>
+								<header class="major">
+									<a class="button" href="foxsi5_updates/update_guide/FOXSI packages Github instructions.pdf" target="_blank">General FOXSI Git & Github Guide</a>
+								</header>
+								<p><em>Note, the guide uses a different FOXSI repository as an example and also details the process using a specific username. To follow the example for the website repository, the following substitions when reading might be useful:</em></p>
+								<ul class="alt">
+									<li><code>cdte-tools</code> to <code>foxsi.github.io</code></li>
+									<li><code>KriSun95</code> to <em>your Github username</em></code></li>
+								</ul>
 							</section>
 
 					</div>

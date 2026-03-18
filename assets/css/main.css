@@ -2218,6 +2218,10 @@ input, select, textarea {
 			box-shadow: inset 0 0 0 2px #18bfef;
 			color: #18bfef !important;
 		}
+		.button.active {
+			box-shadow: inset 0 0 0 2px #18bfef;
+			color: #18bfef !important;
+		}
 
 		input[type="submit"].primary,
 		input[type="reset"].primary,

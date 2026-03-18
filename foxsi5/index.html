@@ -49,6 +49,14 @@
 								<!-- REMEMBER TO UPDATE THIS LIST ON EACH PAGE. NEWEST AT THE TOP? -->
 								<li><a href="foxsi5_launch_days/foxsi5_20260502.html" class="button">2026/05/02</a></li>
 								<li><a href="foxsi5_launch_days/foxsi5_20260501.html" class="button">2026/05/01</a></li>
+								<li><a href="foxsi5_today.html" class="button" id="curr_date">Today</a></li>
+								<script>
+									const now = new Date();
+									const y = now.getFullYear();
+									const m = String(now.getMonth() + 1).padStart(2, '0');
+									const d = String(now.getDate()).padStart(2, '0');
+									document.getElementById('curr_date').textContent = `${y}/${m}/${d}`;
+								</script>
 							</ul>
 							<ul class="actions">
 								<li><a href="foxsi5_launch_days/foxsi5_instructions.html" class="primary button small">Adding New Update Pages</a></li>

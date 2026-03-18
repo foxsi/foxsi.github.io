@@ -2594,12 +2594,18 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.image-row::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
 		.image img {
 			display: block;
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 45%;
 		}
 
 			.image.left img, .image.right img {

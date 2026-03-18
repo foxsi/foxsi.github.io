@@ -7,11 +7,11 @@
 <html>
 	<head>
 		<title>FOXSI-5 Page</title>
-		<link rel="icon" type="image/x-icon" href="../images/foxsi5_logo.png">
+		<link rel="icon" type="image/x-icon" href="/images/foxsi5_logo.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -20,19 +20,19 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="../foxsi5_main.html" class="logo">FOXSI-5</a>
+						<a href="/foxsi5/" class="logo">FOXSI-5</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="../index.html">FOXSI Overview</a></li>
-							<li class="active"><a href="../foxsi5_main.html">FOXSI-5</a></li>
-							<li><a href="../foxsi4_main.html">FOXSI-4</a></li>
-							<li><a href="../foxsi3_main.html">FOXSI-3</a></li>
-							<li><a href="../foxsi2_main.html">FOXSI-2</a></li>
-							<li><a href="../foxsi1_main.html">FOXSI-1</a></li>
-							<li><a href="../publications.html">Publications</a></li>
+							<li><a href="/">FOXSI Overview</a></li>
+							<li class="active"><a href="/foxsi5/">FOXSI-5</a></li>
+							<li><a href="/foxsi4/">FOXSI-4</a></li>
+							<li><a href="/foxsi3/">FOXSI-3</a></li>
+							<li><a href="/foxsi2/">FOXSI-2</a></li>
+							<li><a href="/foxsi1/">FOXSI-1</a></li>
+							<li><a href="/publications/">Publications</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://x.com/foxsirocket4" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -47,17 +47,35 @@
 							<ul class="actions">
 								<!-- ADD MORE DAYS HERE WITH COPIES OF "foxsi5_launch_days/foxsi5_20260501.html"-->
 								<!-- REMEMBER TO UPDATE THIS LIST ON EACH PAGE. NEWEST AT THE TOP? -->
-								<li><a href="../foxsi5_launch_days/foxsi5_20260502.html" class="button">2026/05/02</a></li>
-								<li><a href="../foxsi5_launch_days/foxsi5_20260501.html" class="button">2026/05/01</a></li>
+								<li><a href="foxsi5_20260502.html" class="button">2026/05/02</a></li>
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/01</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="foxsi5_today.html" class="primary button small" id="curr_date">Today</a></li>
+								<li><a href="foxsi5_instructions.html" class="primary button small">Adding New Update Pages</a></li>
 							</ul>
 						</section>
 
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">Updated: Feb. 27, 2026, 21:10:11 UTC</span>
-									<h1>2026 May 1st<br />
+									<span class="date">Updated: Mar. 18, 2026, 15:52:11 UTC</span>
+									<h1><span id="curr_date_fancy"></span><br />
 									Launch Plan</h1>
+									<script>
+										function getOrdinal(day) {
+											if (day > 3 && day < 21) return day + 'th'; // covers 11th, 12th, 13th etc.
+												switch (day % 10) {
+													case 1: return day + 'st';
+													case 2: return day + 'nd';
+													case 3: return day + 'rd';
+													default: return day + 'th';
+												}
+											}
+											const day = getOrdinal(d);
+											const month = now.toLocaleDateString('en-US', { month: 'long' });
+										document.getElementById('curr_date_fancy').textContent = `${month} ${day}, ${y}`;
+									</script>
 									<p>Some description of the plan and then can have an image(s).</p>
 								</header>
 								<!-- Table -->
@@ -91,8 +109,15 @@
 								<header class="major">
 									<a class="button" href="foxsi5_updates/foxsi5_planning_doc_example.pdf" target="_blank">Full Planning Document</a>
 								</header>
-								<p> Can easily show images in the page directly.</p>
-								<div class="image main"><img src="foxsi5_updates/pointing_filler_image.png" alt="" /></div>
+								<p> Can easily show images in the page directly.</p><br>
+								<div class="image-row">
+									<div class="image left"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_171.gif" alt="" /></div>
+									<div class="image right"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_193.gif" alt="" /></div>
+								</div>
+								<div class="image-row">
+									<div class="image left"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_211.gif" alt="" /></div>
+									<div class="image right"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_304.gif" alt="" /></div>
+								</div>
 								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
 							</section>
 
@@ -123,13 +148,14 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+		 	<script src="/assets/js/current_date.js"></script>
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
 
 	</body>
 </html>

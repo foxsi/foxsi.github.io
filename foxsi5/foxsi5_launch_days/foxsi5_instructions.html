@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FOXSI-5 Page</title>
+		<link rel="icon" type="image/x-icon" href="/images/foxsi5_logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/foxsi5/" class="logo">FOXSI-5</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="/">FOXSI Overview</a></li>
+							<li class="active"><a href="/foxsi5/">FOXSI-5</a></li>
+							<li><a href="/foxsi4/">FOXSI-4</a></li>
+							<li><a href="/foxsi3/">FOXSI-3</a></li>
+							<li><a href="/foxsi2/">FOXSI-2</a></li>
+							<li><a href="/foxsi1/">FOXSI-1</a></li>
+							<li><a href="/publications/">Publications</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://x.com/foxsirocket4" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/foxsi" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<section>
+							<h2>FOXSI-5 Launch Updates</h2>
+							<ul class="actions">
+								<!-- ADD MORE DAYS HERE WITH COPIES OF "foxsi5_launch_days/foxsi5_20260501.html"-->
+								<!-- REMEMBER TO UPDATE THIS LIST ON EACH PAGE. NEWEST AT THE TOP? -->
+								<li><a href="foxsi5_20260502.html" class="button">2026/05/02</a></li>
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/01</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="foxsi5_today.html" class="primary button small" id="curr_date">Today</a></li>
+								<li><a href="foxsi5_instructions.html" class="primary button small">Adding New Update Pages</a></li>
+							</ul>
+						</section>
+
+						
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">February 26, 2026</span>
+									<h1>Adding New Update Pages</h1>
+								</header>
+								<p>This page will detail how and where to access the HTML code to add a new FOXSI-5 launch plan update page.</p>
+								<p>
+									<em>
+										Material is provided to help with Git/Github best practices or workflow when contributing to the website code <a href="#github_help">below</a>.
+									</em>
+								</p>
+							</section>
+							<section>
+								<h3>Step 1: Create the new HTML update page</h3>
+								<p>Let's start in the <a style="color:rgb(101, 165, 66);">/foxsi5/foxsi5_launch_days</a>/ folder in the top level of the repository <a style="color:rgb(234, 51, 35);">(a)</a>.</p>
+								<p>Let's use the temporary update page dated 2026 May 1st as a template and use it to create an <a style="color:rgb(202, 116, 189);">update for the following day</a>, May 2nd <a style="color:rgb(234, 51, 35);">(b)</a>.</p>
+								<div class="image main"><img src="/foxsi5/foxsi5_launch_days/foxsi5_updates/update_guide/step1_foxsi5_inst.png" alt="" /></div>
+								<p>We now have a new HTML file to edit and add in the information we want to share with the world regarding FOXSI-5 launch-day plans.</p>
+							</section>
+							<section>
+								<h3>Step 2: Update the page with information</h3>
+								<p>From the template here, the main coordination sections with information are:</p>
+									<ul class="alt">
+										<li>The Today's Planned Potential Targets section, the table of possible targets for the day in question.</li>
+										<li>The Auxiliary Information section, the sections that will have more details about the plan for that day and might have linked files and images.</li>
+									</ul>
+								<p>The format for the update is may be different each time or might change but this is the point we should add create the new page with the information we want to share.</p>
+								<p>On that, there are going to be some "template" lines we'll <em>need</em> to update so we'll have to edit the new HTML file we created.</p>
+								<dl>
+									<dt>Remember to update the dates in the template.</dt>
+										<dd>
+											<p>Since we're using the <a style="color:rgb(195, 166, 55);">foxsi5_20260501.html</a> file as a template, we'll want to update the references to May 1st, 2026 and the reference to the time this page was last updated.</li>
+										</dd>
+								</dl>
+								<div class="image main"><img src="/foxsi5/foxsi5_launch_days/foxsi5_updates/update_guide/step2_foxsi5_inst.png" alt="" /></div>
+								<dl>
+									<dt>Adding images and files.</dt>
+										<dd>
+											<p>Any images or material can be placed in and linked to the following folder.</p>
+											<ul class="alt">
+												<li><a style="color:rgb(101, 165, 66);">/foxsi5/foxsi5_launch_days</a>/<a style="color:rgb(126, 147, 168);">foxsi5_updates</a>/</li>
+											</ul>
+											<p>If the material is for a specific day's file, create a new folder here and use that. This new folder will be referred to as <code>&lt;day_folder&gt;</code> here.</p>
+											<p>Images can be linked and displayed directly in the browser and files can be linked for browser viewing or download. Examples of these are:</p>
+											<ul class="alt">
+												<li>Image: <code>&lt;img src="/foxsi5/foxsi5_launch_days/foxsi5_updates/&lt;day_folder&gt;/image_name.png" alt="" /&gt;</code></li>
+												<li>Document: <code>&lt;a class="button" href="/foxsi5/foxsi5_launch_days/foxsi5_updates/&lt;day_folder&gt;/file_name.png" target="_blank"&gt;Text&lt;/a&gt;</code></li>
+											</ul>
+											<p>Assests can also be brought in frmo other websites. E.g., NASA's latest SDO/AIA image for the 211 &#8491; channel:</p>
+											<ul class="alt">
+												<li>Image: <code>&lt;img src="https://umbra.nascom.nasa.gov/images/latest_aia_211.gif" alt="" /&gt;</code></li>
+											</ul>
+										</dd>
+								</dl>
+							</section>
+							<section>
+								<h3>Step 3: Update the linked buttons on all pages</h3>
+								<p>Now we have a new page, it's time to make sure it's linked to the rest of the website.</p>
+								<p>To do this, we just add a new button to the top of all the relevant HTML pages for FOXSI-5. The files are all the HTML files in the <a style="color:rgb(101, 165, 66);">foxsi5_launch_days</a>/ folder and the foxsi5/index.html page</p>
+								<p>The code that needs updated shows up in multple places (annoyingly); however, it can mostly be copied & pasted.</p>
+								<div class="image main"><img src="foxsi5_updates/update_guide/step3_foxsi5_inst.png" alt="" /></div>
+								<p></em></p>
+								<dl>
+									<dt><em>Note</em></dt>
+										<dd>
+											<ul class="alt">
+												<li><em>The latest update page goes to the top of the "FOXSI-5 Launch Updates" list.</em></li>
+											</ul>
+										</dd>
+								</dl>
+							</section>
+							
+							<section>
+								<h3><div id="github_help">Github contribution help</div></h3>
+								<dl>
+									<dt>TLDR</dt>
+									<dd>
+										<p>The contributer should fork the main Github repository, make changes to a <em>new</em> branch of their fork, then finally propose the changes in a Pull Request from your <em>new</em> (not <em>main</em>) to the FOXSI main branch for review.</p>
+									</dd>
+								</dl>
+								<p>For more detail on contribution and workflow, the following document should help. The General FOXSI Git & Github Guide linked below should exlpain all the steps required when using Git/Github.</p>
+								<header class="major">
+									<a class="button" href="foxsi5_updates/update_guide/FOXSI packages Github instructions.pdf" target="_blank">General FOXSI Git & Github Guide</a>
+								</header>
+								<p><em>Note, the guide uses a different FOXSI repository as an example and also details the process using a specific username. To follow the example for the website repository, the following substitions when reading might be useful:</em></p>
+								<ul class="alt">
+									<li><code>cdte-tools</code> to <code>foxsi.github.io</code></li>
+									<li><code>KriSun95</code> to <em>your Github username</em></code></li>
+								</ul>
+								<p>For those in the FOXSI team, the original document guide can be found on the Google Drive at:
+								<ul class="alt">
+									<li><code>FOXSI > FOXSI-4 Flight 36.370 > Flight Science > software > FOXSI packages Github instructions</code></li>
+								</ul>
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://x.com/foxsirocket4" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://github.com/foxsi" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; The FOXSI Collaboration</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		 	<script src="/assets/js/current_date.js"></script>
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

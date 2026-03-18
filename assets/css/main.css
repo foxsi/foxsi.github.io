@@ -2605,7 +2605,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 45%;
+			max-width: 48%;
 		}
 
 			.image.left img, .image.right img {
@@ -2614,13 +2614,13 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 2rem 2rem 0;
+			margin: 0 1% 1% 0;
 			top: 0.75rem;
 		}
 
 		.image.right {
 			float: right;
-			margin: 0 0 2rem 2rem;
+			margin: 0 0 1% 1%;
 			top: 0.75rem;
 		}
 

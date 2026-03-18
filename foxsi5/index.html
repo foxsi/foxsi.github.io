@@ -44,11 +44,20 @@
 					<div id="main">
 						<section>
 							<h2>FOXSI-5 Launch Updates</h2>
+							<script>
+								const now = new Date();
+								const y = now.getFullYear();
+								const m = String(now.getMonth() + 1).padStart(2, '0');
+								const d = String(now.getDate()).padStart(2, '0');
+								display_date = `${y}/${m}/${d}`;
+							</script>
 							<ul class="actions">
 								<!-- ADD MORE DAYS HERE WITH COPIES OF "foxsi5_launch_days/foxsi5_20260501.html"-->
 								<!-- REMEMBER TO UPDATE THIS LIST ON EACH PAGE. NEWEST AT THE TOP? -->
+								 
 								<li><a href="foxsi5_launch_days/foxsi5_20260502.html" class="button">2026/05/02</a></li>
 								<li><a href="foxsi5_launch_days/foxsi5_20260501.html" class="button">2026/05/01</a></li>
+								<li><a href="foxsi5_launch_days/foxsi5_today.html" class="button" id="curr_date" onmouseenter="this.textContent=display_date" onmouseleave="this.textContent='Today'">Today</a></li>
 							</ul>
 							<ul class="actions">
 								<li><a href="foxsi5_launch_days/foxsi5_instructions.html" class="primary button small">Adding New Update Pages</a></li>

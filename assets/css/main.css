@@ -196,7 +196,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 4rem;
+		font-size: 3.95rem;
 		line-height: 1.1;
 		margin: 0 0 2rem 0;
 	}
@@ -385,6 +385,18 @@ input, select, textarea {
 
 		.row > .col-3 {
 			width: 25%;
+		}
+
+		.row > .col-3 img{
+			width: 100%;
+			aspect-ratio: 1 / 1;
+			border-radius: 25%;
+    		object-fit: cover;
+		}
+		.col-3 a {
+			display: block;
+			border: none;
+			text-decoration: none;
 		}
 
 		.row > .off-3 {
@@ -1313,6 +1325,10 @@ input, select, textarea {
 					box-sizing: border-box;
 				}
 
+				.row > .col-3 {
+					width: 50%;
+				}
+
 				.row.gtr-uniform > * > :last-child {
 					margin-bottom: 0;
 				}
@@ -2218,6 +2234,10 @@ input, select, textarea {
 			box-shadow: inset 0 0 0 2px #18bfef;
 			color: #18bfef !important;
 		}
+		.button.active {
+			box-shadow: inset 0 0 0 2px #18bfef;
+			color: #18bfef !important;
+		}
 
 		input[type="submit"].primary,
 		input[type="reset"].primary,
@@ -2605,7 +2625,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 45%;
+			max-width: 48%;
 		}
 
 			.image.left img, .image.right img {
@@ -2614,13 +2634,13 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 2rem 2rem 0;
+			margin: 0 1% 1% 0;
 			top: 0.75rem;
 		}
 
 		.image.right {
 			float: right;
-			margin: 0 0 2rem 2rem;
+			margin: 0 0 1% 1%;
 			top: 0.75rem;
 		}
 
